@@ -7,7 +7,7 @@ print(index.swapcase())
 
 
 #özet: istenilen karakterin değişkende kaç kere geçtiğini söyler
-p = "oğulcana"
+p = "oğulcanaaa"
 print(p.count("a"))
 
 

@@ -25,6 +25,7 @@ sonuc = faktoriyel(sayi)
 print(f"{sayi} sayısının faktoriyeli = {sonuc}")
 
 
+
 #bu sefer sayıyı kullanıcıdan alarak faktöriyel hesaplıcam
 sayi = int(input("Sayı giriniz:"))
 
@@ -41,8 +42,8 @@ print("Girdiğin sayının faktöriyeli", faktoriyel(sayi))
 ilk_sayi = int(input("ilk sayıyı girin"))
 ikinci_sayi = int(input("ikinci sayıyı girin"))
 
-fibanocci = [ilk_sayi,
-             ikinci_sayi]  # buraya () bunu ekleyemem o zaman tuple olur ve tuple listesini değiştiremem haliyle append metodunu kullanamam
+fibanocci = [ilk_sayi, ikinci_sayi]
+# buraya () bunu ekleyemem o zaman tuple olur ve tuple listesini değiştiremem haliyle append metodunu kullanamam
 for i in range(10):
     ilk_sayi, ikinci_sayi = ikinci_sayi, ilk_sayi + ikinci_sayi
 
