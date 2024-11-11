@@ -37,3 +37,11 @@ if result < 18:
     print("Ehliyet alamazsın reşit değilsin.")
 else:
     print("Ehliyet alabilirsin.")
+
+
+
+nick_name = input("isminizi girin  ")
+if len(nick_name) > 7:
+    print("Kullanıcı adı çok uzun")
+else:
+    print(f"Kullanıcı adı {nick_name} ve iyi")
