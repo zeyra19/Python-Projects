@@ -7,7 +7,7 @@ print(sonuc)
 #özet: kullanıcıdan sayı alır ve bunları toplar
 kullanici = input('Bir takım sayılar giriniz:')
 kullanici_listesi = kullanici.split(',')
-sonuc = sum(map(int,kullanici_listesi))
+sonuc = sum(map(int, kullanici_listesi))
 print(sonuc)
 
 
