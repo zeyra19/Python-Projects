@@ -4,7 +4,7 @@ sure = int(input("Kaldığınız süreyi giriniz:"))
 if sure <= 10:
     print("ödeyeceğin tutar:", sure * 10)
 else:
-    print("ödeyeceğin tutar:" , sure * 50)
+    print("ödeyeceğin tutar:", sure * 50)
 
 
 #özet: bir kelimeyi birden fazla kez yazdırır
