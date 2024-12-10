@@ -1,5 +1,4 @@
-#özet: Class bazlı ve testin durumunu bildiren pytest yaz
-import pytest
+# özet: Class bazlı ve testin durumunu bildiren pytest yaz
 
 
 class TestDictionaryData:
@@ -11,6 +10,9 @@ class TestDictionaryData:
 
     def test_check_key(self):
         assert "key" in self.data
+
+    def test_check_value(self):
+        assert "value" in self.data2
 
     def test_check_key_value(self):
         assert self.data["key"] == "value"
