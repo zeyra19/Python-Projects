@@ -4,23 +4,32 @@ import requests
 class MovieDb:
     def __init__(self):
         self.api_url = "https://api.themoviedb.org/3"
-        self.api_key = "2716b69a59baef16c9bfa5750a9cdfac"
 
     def get_populars(self):
         response = requests.get(f"{self.api_url}/movie/popular?api_key={self.api_key}&language=en-US&page=1")
+        return response.json()
+
+    def get_related(self, keyword):
+        response = requests.get(f"{self.api_url}/search/keyword?api_key={self.api_key}&query={keyword}&page=1")
         return response.json()
 
 
 movieApi = MovieDb()
 
 while True:
-    secim = input("1-Show Result\n2-Exit\n...:")
+    secim = input("1-Show Result\n2-Search Movie\n3-Exit\n...:")
 
-    if secim == "2":
+    if secim == "3":
         break
     else:
         if secim == "1":
             movies = movieApi.get_populars()
             for movie in movies['results']:
                 print(movie['title'])
-        break
+
+        if secim == "2":
+            keyword = input("Search for your movie by entering words: ")
+            movies = movieApi.get_related(keyword)
+            for movie in movies['results']:
+                # hem namei hem idyi alacağım.
+                print(movie['name'], movie['id'])
