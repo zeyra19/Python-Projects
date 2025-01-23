@@ -1,20 +1,20 @@
-# # özet: dışardan etkilenen, bağımlı fonskiyon ve bağımsız fonksiyon
-#
-# A = 10
-#
-#
-# def impure_sum(b):
-#     return b + A
-#
-#
-# print(impure_sum(5))
-#
-#
-# def pure_sum(a, b):
-#     return a + b
-#
-#
-# print(pure_sum(5, 3))
+# özet: dışardan etkilenen, bağımlı fonskiyon ve bağımsız fonksiyon
+
+A = 10
+
+
+def impure_sum(b):
+    return b + A
+
+
+print(impure_sum(5))
+
+
+def pure_sum(a, b):
+    return a + b
+
+
+print(pure_sum(5, 3))
 
 
 # özet: lambda (isimsiz fonksiyon)
